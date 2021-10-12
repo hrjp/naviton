@@ -19,7 +19,7 @@ Navit(oo)n - A mobile robot platform
     * SHARE_FOLDER_PATH  --- コンテナの内部と共有するフォルダの絶対パス
     
     ```bash:bash
-        ./rosenv/docker/naviton_melodic_gpu CONTAINER_NAME SHARE_FOLDER_PATH
+        ./rosenv/docker/naviton_melodic_gpu/run.bash CONTAINER_NAME SHARE_FOLDER_PATH
     ```
 
 3. ## Install naviton ros packages 
