@@ -27,3 +27,11 @@ Navit(oo)n - A mobile robot platform
     ```bash:bash
         cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash
     ```
+
+4. ## コンテナ作成後
+   homeディレクトリにCONTAINER_NAME.bash (CONTAINER_NAMEは自分で作成したコンテナの名前)が生成されている
+   ```bash:bash
+        cd
+        ./CONTAINER_NAME.bash
+    ```
+    上記のスクリプトを実行すると自動でコンテナをスタートしてコンテナ内に入れる
