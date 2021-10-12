@@ -25,7 +25,7 @@ Navit(oo)n - A mobile robot platform
 3. ## Install naviton ros packages 
     初めてコンテナ内部に入ったときに以下のスクリプトを実行してnaviton関連パッケージをインストールする
     ```bash:bash
-        cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash
+        cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && source devel/setup.bash
     ```
 
 4. ## コンテナ作成後
