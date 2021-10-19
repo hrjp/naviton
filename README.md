@@ -35,7 +35,7 @@ git clone https://github.com/hrjp/rosenv
 初めてコンテナ内部に入ったときに以下のスクリプトを実行してnaviton関連パッケージをインストールする
 
 ```bash:bash
-cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && source devel/setup.bash
+cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && source catkin_ws/devel/setup.bash
 ```
 
  ## 4.コンテナ作成後
