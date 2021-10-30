@@ -16,8 +16,8 @@ git clone https://github.com/hrjp/rosenv
 
 ## 2.Docker containerを生成するスクリプトを実行する
 2つの引数を指定する
-* CONTAINER_NAME  --- コンテナの名前
-* SHARE_FOLDER_PATH  --- コンテナの内部と共有するフォルダの絶対パス
+* CONTAINER_NAME  --- コンテナの名前 (ex.  naviton)
+* SHARE_FOLDER_PATH  --- コンテナの内部と共有するフォルダの絶対パス (ex.  /home/user/share)
 ### 以下どちらか選択
 
 ### GPU有り
