@@ -15,20 +15,24 @@ git clone https://github.com/hrjp/rosenv
  ```
 
 ## 2.Docker containerを生成するスクリプトを実行する
-2つの引数を指定する
-* CONTAINER_NAME  --- コンテナの名前 (ex.  naviton)
-* SHARE_FOLDER_PATH  --- コンテナの内部と共有するフォルダの絶対パス (ex.  /home/user/share)
-### 以下どちらか選択
+必要に応じて以下のオプションを指定する
+| Option | Default | Details |
+| :--- | :--- | :--- |
+| -g | | GPUを使用する |
+| -r | | コンテナからexitした際にコンテナを自動消去する | 
+| -n CONTAINER_NAME | naviton_melodic | コンテナの名前 |
+| -s SHARE_FOLDER_PATH | | コンテナ内部と共有するディレクトリのパス<br>rosbagをやデータを外部と共有する際に使用<br>(ex.　shareフォルダを作ってから　/home/user/share ) |
 
-### GPU有り
 
+
+### Option無しで実行 (GPU無し　コンテナ名=naviton_melodic 共有フォルダ無し)
 ```bash
-./rosenv/docker/naviton_melodic_gpu/run.bash CONTAINER_NAME SHARE_FOLDER_PATH
+./rosenv/docker/naviton_melodic/run.bash
 ```
-### GPU無し
+### Optionの使用例 (GPU有り　コンテナ名=naviton　共有フォルダ=/home/user/share)
 
 ```bash:bash
-./rosenv/docker/naviton_melodic/run.bash CONTAINER_NAME SHARE_FOLDER_PATH
+./rosenv/docker/naviton_melodic/run.bash -g -n naviton -s /home/user/share
 ```
 
 ## 3.Install naviton ros packages 
