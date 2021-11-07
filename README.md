@@ -1,12 +1,16 @@
 
-# naviton
-Navit(oo)n - A mobile robot platform 
+
+# Navit(oo)n - A mobile robot platform 
+
+
 
 ---
 
 # Docker setup
-* Ubuntu 18.04
-* ROS Melodic
+Dockerで環境構築する場合
+## Requirement
+* Ubuntu 18.04 or 20.04
+* Docker
 
 
  ## 1.環境構築用のリポジトリをgit cloneする
@@ -53,3 +57,48 @@ cd
 
 ---
 
+# Native setup
+ROS Melodicインストール済のPCに環境構築する場合
+## Requirement
+* Ubuntu 18.04
+* ROS Melodic
+
+ ## 1.環境構築用のリポジトリをgit cloneする
+```bash
+git clone https://github.com/hrjp/rosenv
+ ```
+
+```bash
+./rosenv/package_install.bash
+./rosenv/gazebo_update.bash
+./rosenv/naviton_package.bash
+ ```
+
+ # Simulation demo
+
+gazeboシミュレーションのデモを動かす
+```bash
+roslaunch kcctcore demo.launch
+ ```
+
+
+---
+
+## Kobe Kosen Robotics Navigation Packages
+* [naviton](https://github.com/KobeKosenRobotics/naviton)
+    * kobe kosen roboticsの自律移動ロボットnavitonの環境構築
+* [kcctcore](https://github.com/hrjp/kcctcore)
+    * 各パッケージをつなぐマスターパッケージ
+* [kcctnavigation](https://github.com/hrjp/kcctnavigation)
+    * 自律移動用アルゴリズム全般
+* [waypoint_tools](https://github.com/hrjp/waypoint_tools)
+    * waypointの読み書きなどwaypointに関連するノード全般
+* [kcctsim](https://github.com/hrjp/kcctsim)
+    * gazebo simulationとrobotのURDFモデル
+* [kcctplugin](https://github.com/hrjp/kcctplugin)
+    * 自律移動用のrviz plugin
+* [kcctfirm](https://github.com/hrjp/kcctfirm)
+    * 自律移動ロボットNavitonのファームウェア
+* [LeGO-LOAM](https://github.com/hrjp/LeGO-LOAM)
+    * 3D Mapping
+    * forked from [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
