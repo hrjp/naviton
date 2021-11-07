@@ -15,7 +15,7 @@
 
 ---
 
-## Kobe Kosen Robotics Navigation Packages
+# 1. Kobe Kosen Robotics Navigation Packages
 このプロジェクトのリポジトリ一覧
 * [naviton](https://github.com/KobeKosenRobotics/naviton)
     * kobe kosen roboticsの自律移動ロボットnavitonの環境構築
@@ -37,7 +37,7 @@
 
 ---
 
-# Docker setup
+# 2-1. Docker setup
 Dockerで環境構築する場合
 ## Requirement
 * Ubuntu 18.04 or 20.04
@@ -88,7 +88,7 @@ cd
 
 ---
 
-# Native setup
+# 2-2. Native setup
 ROS Melodicインストール済のPCに環境構築する場合
 ## Requirement
 * Ubuntu 18.04
@@ -105,7 +105,7 @@ git clone https://github.com/hrjp/rosenv
 ./rosenv/naviton_package.bash
  ```
 
- # Simulation demo
+ # 3. Simulation demo
 
 上記の手順で環境構築後にgazeboシミュレーションのデモを動かす
 ```bash
