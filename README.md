@@ -74,11 +74,11 @@ git clone https://github.com/hrjp/rosenv
 初めてコンテナ内部に入ったときに以下のスクリプトを実行してnaviton関連パッケージをインストールする
 
 ```bash:bash
-cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && source catkin_ws/devel/setup.bash
+cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && cd catkin_ws
 ```
 
  ## (4).コンテナ作成後
-homeディレクトリにCONTAINER_NAME.bash (CONTAINER_NAMEは自分で作成したコンテナの名前)が生成されている
+exitしてコンテナの外に出るとhomeディレクトリにCONTAINER_NAME.bash (CONTAINER_NAMEは自分で作成したコンテナの名前)が生成されている
 
 ```bash:bash
 cd
@@ -108,7 +108,9 @@ git clone https://github.com/hrjp/rosenv
  # 3. Simulation demo
 
 上記の手順で環境構築後にgazeboシミュレーションのデモを動かす
+catkin_wsにいる状態で以下のコマンドを実行
 ```bash
+source devel/setup.bash
 roslaunch kcctcore demo.launch
  ```
 
