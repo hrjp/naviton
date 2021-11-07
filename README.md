@@ -111,7 +111,7 @@ git clone https://github.com/hrjp/rosenv
 catkin_wsにいる状態で以下のコマンドを実行
 ```bash
 source devel/setup.bash
-roslaunch kcctcore demo.launch
+roslaunch kcctcore demo2d.launch
  ```
 
 
