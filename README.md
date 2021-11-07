@@ -98,7 +98,7 @@ ROS Melodicインストール済のPCに環境構築する場合
 ```bash
 git clone https://github.com/hrjp/rosenv
  ```
-## (2).以下のスクリプトを実行
+## (2).以下のコマンドを実行
 ```bash
 ./rosenv/package_install.bash
 ./rosenv/gazebo_update.bash
