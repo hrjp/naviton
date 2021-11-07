@@ -108,9 +108,10 @@ git clone https://github.com/hrjp/rosenv
  # 3. Simulation demo
 
 上記の手順で環境構築後にgazeboシミュレーションのデモを動かす
+
 catkin_wsにいる状態で以下のコマンドを実行
-(初回はgazeboの起動にかなり時間がかかる)
-(うまく行かないときは立ち上げ直す)
+* 初回はgazeboの起動にかなり時間がかかる
+* うまく行かないときは立ち上げ直す
 ```bash
 source devel/setup.bash
 roslaunch kcctcore demo2d.launch
