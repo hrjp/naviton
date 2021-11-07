@@ -1,8 +1,37 @@
 
 
 # Navit(oo)n - A mobile robot platform 
+* 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
+
+* 中之島ロボットチャレンジ2020にて完走達成
+
+![naviton_bekobe](https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg)
+
+![navitonmovie](https://user-images.githubusercontent.com/36100321/140646362-12eebd7b-a8c1-4c99-a4e6-2636d64f338b.mp4)
 
 
+
+---
+
+## Kobe Kosen Robotics Navigation Packages
+このプロジェクトのリポジトリ一覧
+* [naviton](https://github.com/KobeKosenRobotics/naviton)
+    * kobe kosen roboticsの自律移動ロボットnavitonの環境構築
+* [kcctcore](https://github.com/hrjp/kcctcore)
+    * 各パッケージをつなぐマスターパッケージ
+* [kcctnavigation](https://github.com/hrjp/kcctnavigation)
+    * 自律移動用アルゴリズム全般
+* [waypoint_tools](https://github.com/hrjp/waypoint_tools)
+    * waypointの読み書きなどwaypointに関連するノード全般
+* [kcctsim](https://github.com/hrjp/kcctsim)
+    * gazebo simulationとrobotのURDFモデル
+* [kcctplugin](https://github.com/hrjp/kcctplugin)
+    * 自律移動用のrviz plugin
+* [kcctfirm](https://github.com/hrjp/kcctfirm)
+    * 自律移動ロボットNavitonのファームウェア
+* [LeGO-LOAM](https://github.com/hrjp/LeGO-LOAM)
+    * 3D Mapping
+    * forked from [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
 
 ---
 
@@ -13,12 +42,12 @@ Dockerで環境構築する場合
 * Docker
 
 
- ## 1.環境構築用のリポジトリをgit cloneする
+ ## (1).環境構築用のリポジトリをgit cloneする
 ```bash
 git clone https://github.com/hrjp/rosenv
  ```
 
-## 2.Docker containerを生成するスクリプトを実行する
+## (2).Docker containerを生成するスクリプトを実行する
 必要に応じて以下のオプションを指定する
 | Option | Default | Details |
 | :--- | :--- | :--- |
@@ -39,14 +68,14 @@ git clone https://github.com/hrjp/rosenv
 ./rosenv/docker/naviton_melodic/run.bash -g -n naviton -s /home/user/share
 ```
 
-## 3.Install naviton ros packages 
+## (3).Install naviton ros packages 
 初めてコンテナ内部に入ったときに以下のスクリプトを実行してnaviton関連パッケージをインストールする
 
 ```bash:bash
 cd /home && git clone https://github.com/hrjp/rosenv && ./rosenv/naviton_package.bash && source catkin_ws/devel/setup.bash
 ```
 
- ## 4.コンテナ作成後
+ ## (4).コンテナ作成後
 homeディレクトリにCONTAINER_NAME.bash (CONTAINER_NAMEは自分で作成したコンテナの名前)が生成されている
 
 ```bash:bash
@@ -63,11 +92,11 @@ ROS Melodicインストール済のPCに環境構築する場合
 * Ubuntu 18.04
 * ROS Melodic
 
- ## 1.環境構築用のリポジトリをgit cloneする
+ ## (1).環境構築用のリポジトリをgit cloneする
 ```bash
 git clone https://github.com/hrjp/rosenv
  ```
-
+## (2).以下のスクリプトを実行
 ```bash
 ./rosenv/package_install.bash
 ./rosenv/gazebo_update.bash
@@ -76,7 +105,7 @@ git clone https://github.com/hrjp/rosenv
 
  # Simulation demo
 
-gazeboシミュレーションのデモを動かす
+上記の手順で環境構築後にgazeboシミュレーションのデモを動かす
 ```bash
 roslaunch kcctcore demo.launch
  ```
@@ -84,21 +113,4 @@ roslaunch kcctcore demo.launch
 
 ---
 
-## Kobe Kosen Robotics Navigation Packages
-* [naviton](https://github.com/KobeKosenRobotics/naviton)
-    * kobe kosen roboticsの自律移動ロボットnavitonの環境構築
-* [kcctcore](https://github.com/hrjp/kcctcore)
-    * 各パッケージをつなぐマスターパッケージ
-* [kcctnavigation](https://github.com/hrjp/kcctnavigation)
-    * 自律移動用アルゴリズム全般
-* [waypoint_tools](https://github.com/hrjp/waypoint_tools)
-    * waypointの読み書きなどwaypointに関連するノード全般
-* [kcctsim](https://github.com/hrjp/kcctsim)
-    * gazebo simulationとrobotのURDFモデル
-* [kcctplugin](https://github.com/hrjp/kcctplugin)
-    * 自律移動用のrviz plugin
-* [kcctfirm](https://github.com/hrjp/kcctfirm)
-    * 自律移動ロボットNavitonのファームウェア
-* [LeGO-LOAM](https://github.com/hrjp/LeGO-LOAM)
-    * 3D Mapping
-    * forked from [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
+
