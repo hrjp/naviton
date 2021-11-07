@@ -7,7 +7,9 @@
 
 ![naviton_bekobe](https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg)
 
-![navitonmovie](https://user-images.githubusercontent.com/36100321/140646362-12eebd7b-a8c1-4c99-a4e6-2636d64f338b.mp4)
+## Navigation Movie
+![navitonmovie](https://user-images.githubusercontent.com/36100321/140646689-f286757a-0510-4f52-9d16-587f6bef6fa1.gif)
+
 
 
 
