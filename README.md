@@ -1,4 +1,4 @@
-![code size](https://img.shields.io/github/languages/code-size/hrjp/naviton?label=code-size&style=plastic)
+
 
 # Navit(oo)n - A mobile robot platform 
 * 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
