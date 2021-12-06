@@ -1,0 +1,30 @@
+name: catkin build
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 0 * * *'
+  push:
+    branches:
+      - main
+
+jobs:
+  push_to_registry:
+    name: Naviton catkin build test job
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: catkin build test
+        uses: docker/build-push-action@v2
+        with:
+          context: ./docker/main
+          push: false
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/naviton:melodic_build_test
