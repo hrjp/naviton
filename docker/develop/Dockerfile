@@ -1,4 +1,4 @@
-FROM hrjp/naviton:melodic_develop
+FROM hrjp/naviton:melodic_cudagl
 
 RUN cd /home && \
     git clone https://github.com/hrjp/rosenv && \
