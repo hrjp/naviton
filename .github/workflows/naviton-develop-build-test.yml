@@ -1,4 +1,4 @@
-name: 'catkin build (main branch)'
+name: 'catkin build (develop branch)'
 on:
   workflow_dispatch:
   schedule:
@@ -24,7 +24,7 @@ jobs:
       - name: catkin build test
         uses: docker/build-push-action@v2
         with:
-          context: ./docker/main
+          context: ./docker/develop
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/naviton:melodic_main
+            ${{ secrets.DOCKER_USERNAME }}/naviton:melodic_develop
