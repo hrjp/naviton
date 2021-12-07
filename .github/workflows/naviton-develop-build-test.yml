@@ -2,7 +2,7 @@ name: 'catkin build (develop branch)'
 on:
   workflow_dispatch:
   schedule:
-    - cron: '55 0 * * *'
+    - cron: '55 17 * * *'
   push:
     branches:
       - main
