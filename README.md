@@ -8,6 +8,7 @@
 * 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
 
 * 中之島ロボットチャレンジ2020にて完走達成
+* [中之島ロボットチャレンジ2021エクストラチャレンジ](https://www.nakanoshima-rc.jp/extra2021.html)にて完走＆課題完全達成　
 
 ![naviton_bekobe](https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg)
 
