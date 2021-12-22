@@ -4,6 +4,7 @@
 ![license](https://img.shields.io/github/license/hrjp/naviton)
 ![size](https://img.shields.io/github/repo-size/hrjp/naviton)
 ![commit](https://img.shields.io/github/last-commit/hrjp/naviton/main)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hrjp/naviton.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
 # Navit(oo)n - A mobile robot platform 
 * 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
 
