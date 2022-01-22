@@ -1,0 +1,27 @@
+[submodule "kcctcore"]
+path = kcctcore
+url = https://github.com/hrjp/kcctcore
+
+[submodule "kcctnavigation"]
+path = kcctnavigation
+url = https://github.com/hrjp/kcctnavigation
+
+[submodule "waypoint_tools"]
+path = waypoint_tools
+url = https://github.com/hrjp/waypoint_tools
+
+[submodule "kcctsim"]
+path = kcctsim
+url = https://github.com/hrjp/kcctsim
+
+[submodule "kcctplugin"]
+path = kcctplugin
+url = https://github.com/hrjp/kcctplugin
+
+[submodule "kcctfirm"]
+path = kcctfirm
+url = https://github.com/hrjp/kcctfirm
+
+[submodule "LeGO-LOAM"]
+path = LeGO-LOAM
+url = https://github.com/hrjp/LeGO-LOAM
