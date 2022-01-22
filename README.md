@@ -1,13 +1,15 @@
 [![naviton workflow](https://github.com/hrjp/rosenv/actions/workflows/naviton-image-build.yml/badge.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
-![naviton catkin build main](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml/badge.svg)
-![naviton catkin build develop](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)
+[![catkin build (main branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml)
+[![catkin build (develop branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml)
 ![license](https://img.shields.io/github/license/hrjp/naviton)
 ![size](https://img.shields.io/github/repo-size/hrjp/naviton)
 ![commit](https://img.shields.io/github/last-commit/hrjp/naviton/main)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hrjp/naviton.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
 # Navit(oo)n - A mobile robot platform 
 * 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
 
 * 中之島ロボットチャレンジ2020にて完走達成
+* [中之島ロボットチャレンジ2021エクストラチャレンジ](https://www.nakanoshima-rc.jp/extra2021.html)にて完走＆課題完全達成　
 
 ![naviton_bekobe](https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg)
 
