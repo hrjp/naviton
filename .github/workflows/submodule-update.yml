@@ -1,0 +1,17 @@
+name: submodule_update
+
+on:
+  workflow_dispatch:
+jobs:
+  submodule_update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: submodule
+        run: |
+          git config --global user.email ${{ secrets.EMAIL }}
+          git config --global user.name ${{ secrets.USERNAME }}
+          git submodule foreach git pull origin main
+          git add .
+          git commit -m "Update submodules"
+          git push origin main
