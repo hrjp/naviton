@@ -2,6 +2,8 @@ name: submodule_update
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '55 17 * * *'
 jobs:
   submodule_update:
     runs-on: ubuntu-latest
