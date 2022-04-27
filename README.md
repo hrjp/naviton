@@ -1,10 +1,11 @@
 [![naviton workflow](https://github.com/hrjp/rosenv/actions/workflows/naviton-image-build.yml/badge.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
 [![catkin build (main branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml)
-[![catkin build (develop branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml)
+[![catkin build (develop branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml).  
 ![license](https://img.shields.io/github/license/hrjp/naviton)
 ![size](https://img.shields.io/github/repo-size/hrjp/naviton)
 ![commit](https://img.shields.io/github/last-commit/hrjp/naviton/main)
-[![Docker Pulls](https://img.shields.io/docker/pulls/hrjp/naviton.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
+[![Docker Pulls](https://img.shields.io/docker/pulls/hrjp/naviton.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)  
+[![dockeri.co](https://dockeri.co/image/hrjp/naviton)](https://hub.docker.com/r/hrjp/naviton)
 # Navit(oo)n - A mobile robot platform 
 * 2025年大阪万博での自動ゴミ拾いロボット実現を目標とした自律移動ロボットプロジェクト
 
