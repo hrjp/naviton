@@ -1,6 +1,6 @@
 [![naviton workflow](https://github.com/hrjp/rosenv/actions/workflows/naviton-image-build.yml/badge.svg)](https://hub.docker.com/repository/docker/hrjp/naviton)
 [![catkin build (main branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-main-build-test.yml)
-[![catkin build (develop branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml).  
+[![catkin build (develop branch)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml/badge.svg)](https://github.com/hrjp/naviton/actions/workflows/naviton-develop-build-test.yml)  
 ![license](https://img.shields.io/github/license/hrjp/naviton)
 ![size](https://img.shields.io/github/repo-size/hrjp/naviton)
 ![commit](https://img.shields.io/github/last-commit/hrjp/naviton/main)
