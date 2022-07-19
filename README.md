@@ -130,10 +130,10 @@ git clone https://github.com/hrjp/naviton
 ```bash
 ./naviton/docker/main/run.bash
 ```
-### Optionの使用例 (GPU有り　コンテナ名=naviton　共有フォルダ=/home/user/share)
+### Optionの使用例 (GPU有り　コンテナ名=naviton　共有フォルダ=/home/$USER/share)
 
 ```bash:bash
-./naviton/docker/main/run.bash -g -n naviton -s /home/user/share
+./naviton/docker/main/run.bash -g -n naviton -s /home/$USER/share
 ```
 
  ## (3).コンテナ作成後
