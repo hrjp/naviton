@@ -171,10 +171,16 @@ git clone https://github.com/hrjp/rosenv
 
 catkin_wsにいる状態で以下のコマンドを実行
 * 初回はgazeboの起動にかなり時間がかかる
-* うまく行かないときは立ち上げ直す
+* うまく行かないときは立ち上げ直す   
+
+2D
 ```bash
 roslaunch kcctcore demo2d.launch
- ```
+```
+ 3D (GPU必須)
+```bash
+roslaunch kcctcore demo3d.launch
+```
 
 
 ---
