@@ -14,10 +14,10 @@
 * [中之島ロボットチャレンジ2022](https://www.nakanoshima-rc.jp/index.html)にて完走＆課題完全達成　
 * [中之島ロボットチャレンジ2022エクストラチャレンジ](https://www.nakanoshima-rc.jp/2022_nakanoshima-rc_garbage_result.pdf)にて完走＆ゴミ回収チャレンジ達成　
 
-![naviton_bekobe](https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg)
 
-## Navigation Movie
-![navitonmovie](https://user-images.githubusercontent.com/36100321/140646689-f286757a-0510-4f52-9d16-587f6bef6fa1.gif)
+<img src="https://user-images.githubusercontent.com/36100321/140645407-81af34fd-451e-4b16-b041-acf035970be1.jpeg" width="500">
+
+<img src="https://user-images.githubusercontent.com/36100321/140646689-f286757a-0510-4f52-9d16-587f6bef6fa1.gif" width="500">
 
 
 
@@ -26,7 +26,7 @@
 
 # 1. Kobe Kosen Robotics Navigation Packages
 このプロジェクトのリポジトリ一覧
-* [naviton](https://github.com/KobeKosenRobotics/naviton)
+* [naviton](https://github.com/hrjp/naviton)
     * kobe kosen roboticsの自律移動ロボットnavitonの環境構築
 * [kcctcore](https://github.com/hrjp/kcctcore)
     * 各パッケージをつなぐマスターパッケージ
@@ -43,69 +43,13 @@
 * [LeGO-LOAM](https://github.com/hrjp/LeGO-LOAM)
     * 3D Mapping
     * forked from [LeGO-LOAM](https://github.com/RobustFieldAutonomyLab/LeGO-LOAM)
-
-
----
-# 2. CI/CD Workflow
-### Github repositories
-* [rosenv](https://github.com/hrjp/rosenv)
-* [navtion](https://github.com/hrjp/navtion)
-
-### Dockerhub repositories
-
-* [hrjp/ros](https://hub.docker.com/repository/docker/hrjp/ros)
-* [hrjp/naviton](https://hub.docker.com/repository/docker/hrjp/naviton)
-
-
-```mermaid
-graph TD
-
-  subgraph GitHub
-    subgraph rosenv
-      docker/ros_melodic/Dockerfile
-      docker/naviton_melodic/Dockerfile
-    end
-    subgraph naviton 
-      docker/main/Dockerfile
-      docker/develop/Dockerfile
-    end
-  end
-  subgraph dockerhub
-    subgraph hrjp/ros
-      hrjp/ros:melodic_cudagl
-    end
-    subgraph hrjp/naviton
-      hrjp/naviton:melodic_cudagl
-      hrjp/naviton:melodic_main
-      hrjp/naviton:melodic_develop
-    end
-  end
-  
-  docker/ros_melodic/Dockerfile-->|Auto build and push at 11 P.M.|hrjp/ros:melodic_cudagl
-  hrjp/ros:melodic_cudagl-->docker/naviton_melodic/Dockerfile
-  docker/naviton_melodic/Dockerfile-->|Auto build and push at 1 A.M.|hrjp/naviton:melodic_cudagl
-  hrjp/naviton:melodic_cudagl-->docker/main/Dockerfile
-  hrjp/naviton:melodic_cudagl-->docker/develop/Dockerfile
-  docker/main/Dockerfile-->|Auto docker build and push at 3 A.M.|hrjp/naviton:melodic_main
-  docker/develop/Dockerfile-->|Auto docker build and push at 3 A.M.|hrjp/naviton:melodic_develop
-  
-  click docker/ros_melodic/Dockerfile https://github.com/hrjp/rosenv/blob/main/docker/ros_melodic/Dockerfile
-  click docker/naviton_melodic/Dockerfile https://github.com/hrjp/rosenv/blob/main/docker/naviton_melodic/Dockerfile
-  click docker/main/Dockerfile https://github.com/hrjp/naviton/blob/main/docker/main/Dockerfile
-  click docker/develop/Dockerfile https://github.com/hrjp/naviton/blob/main/docker/develop/Dockerfile
-  
-  click hrjp/ros:melodic_cudagl https://hub.docker.com/repository/docker/hrjp/ros
-  click hrjp/naviton:melodic_cudagl https://hub.docker.com/repository/docker/hrjp/naviton
-  click hrjp/naviton:melodic_main https://hub.docker.com/repository/docker/hrjp/naviton
-  click hrjp/naviton:melodic_develop https://hub.docker.com/repository/docker/hrjp/naviton
-  
-```
-
+* [naviton_design](https://github.com/KobeKosenRobotics/naviton_design)
+    * CADデータと回路基板データ
 ---
 
-# 3. Setup
+# 2. Setup
 環境構築には 2-1.Dockerを用いる方法(推奨), 2-2.ROS環境に直接構築する方法がある.
-# 3-1. Docker setup
+# 2-1. Docker setup
 Dockerで環境構築する場合
 ## Requirement
 * Ubuntu 18.04 or 20.04
@@ -149,7 +93,7 @@ cd
 
 ---
 
-# 3-2. Native setup
+# 2-2. Native setup
 ROS Melodicインストール済のPCに環境構築する場合
 ## Requirement
 * Ubuntu 18.04
@@ -166,7 +110,7 @@ git clone https://github.com/hrjp/rosenv
 ./rosenv/naviton_package.bash
  ```
 
- # 4. Simulation demo
+ # 3. Simulation demo
 
 上記の手順で環境構築後にgazeboシミュレーションのデモを動かす
 
