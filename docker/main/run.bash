@@ -4,7 +4,7 @@ CONTAINER_NAME=naviton_melodic
 SHARE_FOLDER_PATH=""
 SHARE_FOLDER_CMD=""
 GPU_CMD=""
-
+CONTAINER_NAME_CMD="--name $CONTAINER_NAME"
 
 usage_exit() {
         echo " " 1>&2
@@ -13,7 +13,7 @@ usage_exit() {
         echo " -----------------------------------------------------------------------------" 1>&2
         echo " -g                   | GPU enabled" 1>&2
         echo " -r                   | remove when exit the container" 1>&2
-        echo " -n CONTAINER_NAME    | container name (default : naviton_melodic)" 1>&2
+        echo " -n CONTAINER_NAME    | container name (default : $CONTAINER_NAME )" 1>&2
         echo " -s SHARE_FOLDER_PATH | directory path shared with the inside of the container" 1>&2
         echo " -----------------------------------------------------------------------------" 1>&2
         exit 1
@@ -29,6 +29,7 @@ do
             echo " Remove when exit this container" 1>&2
             ;;
         n)  CONTAINER_NAME=$OPTARG
+            CONTAINER_NAME_CMD="--name $CONTAINER_NAME"
             echo " CONTAINER_NAME = $OPTARG " 1>&2
             ;;
         s )  SHARE_FOLDER_PATH=$OPTARG
@@ -51,10 +52,13 @@ if [ -z $REMOVE_CMD ]; then
         sudo chmod 777 $CONTAINER_NAME.bash
         echo -e "xhost + \n docker start $CONTAINER_NAME \n docker exec -it $CONTAINER_NAME /bin/bash" >>$CONTAINER_NAME.bash
     fi
+else
+    CONTAINER_NAME=""
 fi
 
 xhost +
-docker run -it --name $CONTAINER_NAME \
+
+docker run -it  $CONTAINER_NAME_CMD\
             -v /dev:/dev \
             -v /tmp/.X11-unix:/tmp/.X11-unix \
             -v $HOME/.Xauthority:/root/.Xauthority:rw \
@@ -65,5 +69,4 @@ docker run -it --name $CONTAINER_NAME \
             $REMOVE_CMD \
             --net=host \
             --privileged \
-            hrjp/naviton:melodic_main /bin/bash
-
+            $IMAGE_NAME /bin/bash
