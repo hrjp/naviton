@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CONTAINER_NAME=naviton_melodic_develop
+IMAGE_NAME=hrjp/naviton:melodic_main
 SHARE_FOLDER_PATH=""
 SHARE_FOLDER_CMD=""
 GPU_CMD=""
